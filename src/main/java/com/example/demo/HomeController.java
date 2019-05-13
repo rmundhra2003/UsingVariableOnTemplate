@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
         @RequestMapping("/")
         public String homePage(Model model) {
             model.addAttribute("myvar", "Say hello to the people.");
+            model.addAttribute("myvar2", "This is rekha!.");
+
             return "hometemplate";
         }
     }
